@@ -1,14 +1,20 @@
 ---
-title: 查看已连接蓝牙设备的MAC
+title: 定制设备-查看已连接蓝牙设备的MAC
+date: 2018-08-06
+toc: true
+comments: 定制设备开发
+categories:
+  - 软件开发
+  - 系统设置
+tags:
+  - Android
+  - 蓝牙
 ---
 
-[TOC]
-
----
 
 **开始之前,要Root设备，并先配对蓝牙模块**
 
-## 使用到的命令
+# 使用到的命令
 adb shell  --进入Android Shell命令环境
 ```
 input keyevent 3  //--回到首页
@@ -16,7 +22,9 @@ input keyevent 4  // 返回上一页
 ```
 
 
-## 查看配对信息，找到读卡器蓝牙MAC地址，依次执行下面三个命令
+# 查看配对信息
+
+找到读卡器蓝牙MAC地址，依次执行下面三个命令
 
 ```
 adb shell 
@@ -118,7 +126,7 @@ b </N12>
 *例如我链接的是“小米手机”那么我们找到的蓝牙mac就是“ac:c1:ee:10:0a:84”*
 
 
-## 退出Su权限，以免误操作。
+# 退出Su权限，以免误操作。
 ```
 exit
 ```
@@ -129,7 +137,7 @@ exit
 
 **以下为实际项目使用,请看官忽略.**
 
-## 示例
+# 示例
 * 创建文件
 ```
 touch /sdcard/blueToothAddress.txt
