@@ -8,7 +8,7 @@ tags:
   - JDK
 categories:
   - 软件开发
-  - 环境配置
+  - 系统与环境
 ---
 
 
@@ -82,9 +82,3 @@ source /etc/profile
 ```
 java -version
 ```
-
-
-
-# 参考资料
-> - []()
-> - []()

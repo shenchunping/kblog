@@ -6,7 +6,7 @@ tags:
   - Android
 categories:
   - 软件开发
-  - 环境配置
+  - 系统与环境
 ---
 
 
@@ -160,9 +160,3 @@ for node in root.getElementsByTagName("project"):
 此时将看到命令窗口在不断的下载文件。就算大功告成，等待下载结束即可。
 
 
-
-
-
-# 参考资料
-> - []()
-> - []()

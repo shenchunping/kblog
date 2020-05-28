@@ -5,7 +5,8 @@ toc: true
 comments: 定制设备开发
 categories:
   - 软件开发
-  - 系统设置
+  - 程序语言
+  - Android
 tags:
   - Android
   - 蓝牙

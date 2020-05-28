@@ -8,7 +8,7 @@ tags:
   - CentOS
 categories:
   - 软件开发
-  - 系统设置
+  - 系统与环境
 ---
 
 

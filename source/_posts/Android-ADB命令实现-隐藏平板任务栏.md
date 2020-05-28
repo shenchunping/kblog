@@ -6,7 +6,8 @@ tags:
   - Android
 categories:
   - 软件开发
-  - 系统设置
+  - 程序语言
+  - Android
 ---
 
 
@@ -49,7 +50,3 @@ cat /system/build.prop
 reboot
 ```
 
-
-# 参考资料
-> - []()
-> - []()

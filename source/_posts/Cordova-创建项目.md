@@ -1,12 +1,14 @@
 ---
 title: Cordova 创建项目
 toc: true
-date: 2018-08-06
+date: 2019-04-18
 tags:
   - Cordova
+  - JS
 categories:
   - 软件开发
   - 程序语言
+  - JS
 ---
 
 
@@ -66,9 +68,3 @@ cordova build ios
 cordova emulate ios
 ``` 
 
-
-
-
-# 参考资料
-> - []()
-> - []()

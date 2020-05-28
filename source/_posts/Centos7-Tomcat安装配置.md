@@ -8,14 +8,14 @@ tags:
   - Tomcat
 categories:
   - 软件开发
-  - 环境配置
+  - 系统与环境
 ---
 
 
 
 # Java环境安装（略）
 # 下载安装Tomcat
-```
+``` shell
 //进入opt目录
 cd /opt
 
@@ -36,25 +36,32 @@ mv apache-tomcat-8.5.27 tomcat8
 ./tomcat8/bin/shutdown.sh
 ```
 
-# 配置tomcat系统服务
+# 配置tomcat系统服务,及自启动。
 
 ## Linux配置
+
 * 创建服务文件
+``` shell
+cp /tomcat/path/catalina.sh /etc/init.d/
+cd /etc/init.d/
+mv catalina.sh tomcat
 ```
-vim /etc/init.d/tomcat
-```
+
 * 添加服务文件内容
 
-```
+``` shell
+vim tomcat 
+
+## 在文件开头添加如下内容
+CATALINA_HOME=/tomcat/path
+JAVA_HOME=/jdk/home
 
 ```
+
+
 * 服务开机启动
 
+``` shell
+chkconfig --add tomcat 
 ```
 
-```
-
-
-# 参考资料
-> - []()
-> - []()
