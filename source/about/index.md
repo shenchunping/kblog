@@ -1,9 +1,4 @@
----
-title: "关于我"
+title: "About"
 layout: "page"
 ---
-# 自我介绍
-# 联系方式
-# 工作经历
-# 其他
 

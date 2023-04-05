@@ -5,7 +5,7 @@ db.json
 node_modules/
 public/
 .deploy*/
-.idea/
-.vscode/
+_multiconfig.yml
+.idea
 yarn.lock
 package-lock.json

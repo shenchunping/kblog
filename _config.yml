@@ -12,9 +12,8 @@ language: zh-CN
 timezone: 'Asia/Shanghai'
 
 # URL
-## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://shenchunping.github.io
-root: /
+## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
+url: http://example.com
 permalink: :year-:month-:day-:title.html
 permalink_defaults:
 pretty_urls:
@@ -30,8 +29,6 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
-  - README.md
-  - '_posts/**/embed_page/**'
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -43,10 +40,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: true
-marked:
-  prependRoot: true
-  postAsset: true
+post_asset_folder: false
 relative_link: false
 future: true
 highlight:
@@ -56,6 +50,11 @@ highlight:
   tab_replace: ''
   wrap: true
   hljs: false
+prismjs:
+  enable: false
+  preprocess: true
+  line_number: true
+  tab_replace: ''
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -81,8 +80,8 @@ meta_generator: true
 ## http://momentjs.com/docs/#/displaying/format/
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
-## Use post's date for updated date unless set in front-matter
-use_date_for_updated: false
+## updated_option supports 'mtime', 'date', 'empty'
+updated_option: 'mtime'
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -99,14 +98,76 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 # theme: landscape
-#theme: Wikitten
-theme: book
+theme: Wikitten
 
 # Deployment
-## Docs: https://hexo.io/docs/deployment.html
+## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
   repository: git@github.com:shenchunping/shenchunping.github.com.git
   # repository: git@gitee.com:shenchunping/shenchunping.git
   branch: master
   message: "changeme: Review this code"
+
+
+
+
+  math:
+    enable: true
+    engine: mathjax
+
+  ## Markdown
+  ## https://github.com/hexojs/hexo-renderer-marked
+  marked:
+    gfm: true
+
+  ## Plugins: https://hexo.io/plugins/
+  ### JsonContent
+  jsonContent:
+    meta: false
+    pages:
+      title: true
+      date: true
+      path: true
+      text: true
+    posts:
+      title: true
+      date: true
+      path: true
+      text: true
+      tags: true
+      categories: true
+    ignore:
+      - 404.html
+
+  ### Creat sitemap
+  sitemap:
+    path: sitemap.xml
+
+  ### Adds nofollow attribute to all external links in your hexo blog posts automatically.
+  nofollow:
+    enable: true
+    exclude:
+      - <your site url domain> # eg: zthxxx.me
+  # Customize
+  customize: # modify this information for yourself
+    sidebar: left # sidebar position, options: left, right
+    category_perExpand: false # enable article categories list per expanding
+    default_index_file: index.md # enable this, it will display at site index instead of default index page, or disable that it will display more articles order by time
+
+  # Widgets
+  widgets: # default use category only
+    - category
+    # - recent_posts
+    - archive
+    - tag
+    # - tagcloud
+    # - links
+
+  # History version
+  history_control: # make you wiki has history version control in page (view source code, edit online, compare historical changes)
+    enable: true
+    server_link: https://github.com # recommend use GitHub - https://github.com
+    user: shenchunping
+    repertory: <your repertory name of this wiki source code>
+    branch: master
