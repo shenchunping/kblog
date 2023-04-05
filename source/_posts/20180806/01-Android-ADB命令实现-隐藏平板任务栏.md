@@ -1,12 +1,10 @@
 ---
-title: Android-ADB命令实现-隐藏平板任务栏
+title: ADB命令实现-隐藏平板任务栏
 toc: true
 date: 2018-08-06
 tags:
   - Android
 categories:
-  - 软件开发
-  - 程序语言
   - Android
 ---
 

@@ -5,8 +5,7 @@ date: 2018-08-06
 tags:
   - Android
 categories:
-  - 软件开发
-  - 系统与环境
+  - Android
 ---
 
 
@@ -147,15 +146,16 @@ for node in root.getElementsByTagName("project"):
 
 
 * 打开Python IDLE 
-![TIM截图20180102191300.png](http://upload-images.jianshu.io/upload_images/2093886-2a293e366bdcba76.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIM截图20180102191300.png](./20180806-03-Android源码下载-Windows/2093886-2a293e366bdcba76.webp)
 
 * 打开刚刚编辑的代码文档
-![TIM截图20180102192032.png](http://upload-images.jianshu.io/upload_images/2093886-dcbfb890c573a27f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIM截图20180102192032.png](./20180806-03-Android源码下载-Windows/2093886-dcbfb890c573a27f.webp)
 
-![TIM截图20180102192255.png](http://upload-images.jianshu.io/upload_images/2093886-a856b025d87fedac.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIM截图20180102192255.png](./20180806-03-Android源码下载-Windows/2093886-a856b025d87fedac.webp)
 
 * 执行代码
-![TIM截图20180102192543.png](http://upload-images.jianshu.io/upload_images/2093886-9aee698760fe6da6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![TIM截图20180102192255.png](./20180806-03-Android源码下载-Windows/2093886-9aee698760fe6da6.webp)
 
 此时将看到命令窗口在不断的下载文件。就算大功告成，等待下载结束即可。
 

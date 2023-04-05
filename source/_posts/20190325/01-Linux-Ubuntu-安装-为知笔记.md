@@ -1,13 +1,12 @@
 ---
 title: Ubuntu 安装'为知笔记'
 toc: true
-date: 2019-03-25 16:26:44
+date: 2019-03-Android-Android源码下载-Windows-25 16:26:44
 tags:
   - Linux
   - Ubuntu
 categories:
-  - 软件开发
-  - 系统与环境
+  - Linux
 ---
 
 

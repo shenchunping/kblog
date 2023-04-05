@@ -4,8 +4,6 @@ date: 2018-08-06
 toc: true
 comments: 定制设备开发
 categories:
-  - 软件开发
-  - 程序语言
   - Android
 tags:
   - Android

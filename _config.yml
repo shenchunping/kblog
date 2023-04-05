@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Kuper's Blog
-subtitle: ''
+title: Coder 沈春平
+subtitle: '学习笔记'
 description: ''
-keywords:
+keywords: 沈春平, Coder, 笔记, 术语, 编程, 开发, 前端, Java, Android, Spring, Kotlin, HTML5, CSS3, JavaScript, Linux, Mac
 author: 沈春平
 language: zh-CN
 timezone: 'Asia/Shanghai'
@@ -15,7 +15,7 @@ timezone: 'Asia/Shanghai'
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://shenchunping.github.io
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :year-:month-:day-:title.html
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -43,7 +43,10 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
+marked:
+  prependRoot: true
+  postAsset: true
 relative_link: false
 future: true
 highlight:
@@ -96,7 +99,8 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 # theme: landscape
-theme: Wikitten
+#theme: Wikitten
+theme: book
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -105,3 +109,4 @@ deploy:
   repository: git@github.com:shenchunping/shenchunping.github.com.git
   # repository: git@gitee.com:shenchunping/shenchunping.git
   branch: master
+  message: "changeme: Review this code"

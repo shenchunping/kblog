@@ -1,12 +1,10 @@
 ---
-title: APK 反编译-基础篇
+title: APK反编译-基础篇
 toc: true
 date: 2019-04-21 16:33:21
 tags:
   - Android
 categories:
-  - 软件开发
-  - 程序语言
   - Android
 ---
 

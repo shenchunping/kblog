@@ -5,8 +5,6 @@ date: 2018-08-06
 tags:
   - Android
 categories:
-  - 软件开发
-  - 程序语言
   - Android
 ---
 

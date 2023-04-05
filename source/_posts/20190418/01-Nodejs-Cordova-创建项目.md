@@ -6,8 +6,6 @@ tags:
   - Cordova
   - JS
 categories:
-  - 软件开发
-  - 程序语言
   - JS
 ---
 

@@ -5,9 +5,8 @@ date: 2019-04-19 14:59:58
 tags:
   - Java
   - 内存
+  - JVM
 categories:
-  - 软件开发
-  - 程序语言
   - Java
   
 ---

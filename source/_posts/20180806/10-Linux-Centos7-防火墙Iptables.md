@@ -6,8 +6,7 @@ tags:
   - Linux
   - CentOS
 categories:
-  - 软件开发
-  - 系统与环境
+  - Linux
 ---
 
 # 命令行设置

@@ -6,12 +6,12 @@ tags:
   - Mac
   - brew
 categories:
-  - 软件开发
-  - 系统与环境
+  - Mac
 
 ---
 
 # 管理软件包
+
 ```shell
     brew --help         #简洁命令帮助
     man brew           #完整命令帮助
@@ -40,7 +40,57 @@ brew services cleanup  # 清除已卸载应用的无用的配置
 
 ```
 
+# 自动删除依赖
 
-# 参考资料
-> - []()
-> - []()
+```shell
+# 安装rmtree
+brew tap beeftornado/rmtree
+
+# 删除
+brew rmtree package
+```
+
+# 国内源直接安装
+
+```shell
+/bin/bash -c "$(curl -fsSL https://cdn.jsdelivr.net/gh/ineo6/homebrew-install/install.sh)"
+```
+
+# 国内源替换
+
+```shell
+中科大镜像 https://mirrors.ustc.edu.cn/
+清华镜像 https://mirrors.tuna.tsinghua.edu.cn/#
+北京外国语镜像 https://mirrors.bfsu.edu.cn/#
+```
+
+# 查看brew当前源
+
+```shell
+cd "$(brew --repo)" && git remote -v
+```
+
+# 查看brew-core当前源
+
+```shell
+cd "$(brew --repo homebrew/core)" && git remote -v
+```
+
+# 替换源
+
+```shell
+# 替换brew
+cd "$(brew --repo)" && git remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git
+
+# 替换homebrew-core
+cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core" && git remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git
+
+# 替换homebrew-cask
+cd "$(brew --repo)/Library/Taps/homebrew/homebrew-cask" && git remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-cask.git
+
+# 替换bottles
+echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles' >> ~/.zshrc
+
+# 使其生效
+source ~/.bash_profile
+```

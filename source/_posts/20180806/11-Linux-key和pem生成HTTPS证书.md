@@ -1,13 +1,12 @@
 ---
 title: key和pem生成HTTPS证书
 toc: true
-date: 2019-03-26 13:51:39
+date: 2019-03-Android-Android源码下载-Windows-26 13:51:39
 tags:
   - HTTPS
   - 证书
 categories:
-  - 软件开发
-  - 系统与环境
+  - Linux
 ---
 
 # MAC下直接命令生成.p12文件
